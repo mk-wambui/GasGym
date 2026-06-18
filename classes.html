@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classes — GasGym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🔥 GasGym</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="classes.html">Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+          <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2">
+            <button id="themeToggle" class="btn-join">🌙 Dark</button>
+          </li>
+          <li class="nav-item ms-2">
+            <a href="membership.html" class="btn-join">Join Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero d-flex align-items-center">
+    <div class="container">
+      <p class="hero-sub">What We Offer</p>
+      <h1 class="hero-title">OUR <span>Classes</span></h1>
+    </div>
+  </section>
+
+  <!-- FILTER BUTTONS -->
+  <section class="section-pink py-4">
+    <div class="container text-center">
+      <h2 class="mb-4">FIND <em>your</em> CLASS</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
+        <button class="filter-btn btn-primary-gg active" data-filter="all">All Classes</button>
+        <button class="filter-btn btn-primary-gg" data-filter="cardio">Cardio</button>
+        <button class="filter-btn btn-primary-gg" data-filter="strength">Strength</button>
+        <button class="filter-btn btn-primary-gg" data-filter="yoga">Yoga & Flexibility</button>
+        <button class="filter-btn btn-primary-gg" data-filter="hiit">HIIT</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASS CARDS -->
+  <section class="section-dark py-5">
+    <div class="container">
+      <div class="row g-4" id="classGrid">
+
+        <div class="col-md-4 class-card" data-category="hiit">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">⚡</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">HIIT Blast</h5>
+            <p style="color:#7a3048;">High-intensity interval training that burns maximum calories in minimum time.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 45 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> Intermediate</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Mon, Wed, Fri — 6:00 AM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">HIIT</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 class-card" data-category="strength">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">🏋️</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">Power Lifting</h5>
+            <p style="color:#7a3048;">Build raw strength using barbells, dumbbells, and compound movements.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 60 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> All Levels</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Tue, Thu — 7:00 AM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">Strength</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 class-card" data-category="yoga">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">🧘</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">Power Yoga</h5>
+            <p style="color:#7a3048;">Improve flexibility, balance, and mental clarity through dynamic yoga flows.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 60 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> Beginner</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Mon, Wed — 8:00 AM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">Yoga</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 class-card" data-category="cardio">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">🚴</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">Spin Cycle</h5>
+            <p style="color:#7a3048;">High energy indoor cycling class set to pumping music. Burns up to 600 calories.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 45 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> All Levels</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Tue, Thu, Sat — 6:30 AM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">Cardio</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 class-card" data-category="strength">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">💪</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">Body Pump</h5>
+            <p style="color:#7a3048;">Full body barbell workout targeting all major muscle groups for a lean physique.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 55 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> Intermediate</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Mon, Fri — 5:30 PM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">Strength</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 class-card" data-category="cardio">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">🥊</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">Cardio Kickbox</h5>
+            <p style="color:#7a3048;">Punch and kick your way to fitness in this fun, high-energy cardio class.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 50 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> All Levels</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Wed, Sat — 10:00 AM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">Cardio</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 class-card" data-category="hiit">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">🔥</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">Tabata Burn</h5>
+            <p style="color:#7a3048;">20 seconds on, 10 seconds off — the most efficient fat-burning workout known.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 30 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> Advanced</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Tue, Thu — 6:00 PM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">HIIT</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 class-card" data-category="yoga">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">🌿</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">Stretch & Recover</h5>
+            <p style="color:#7a3048;">Deep stretching and mobility work to help your body recover and stay injury-free.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 45 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> Beginner</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Sun — 9:00 AM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">Yoga</span>
+          </div>
+        </div>
+
+        <div class="col-md-4 class-card" data-category="strength">
+          <div class="card-pink h-100 p-4">
+            <div style="font-size:2rem;">🤸</div>
+            <h5 class="fw-bold mt-2" style="color:#3b0a1a;">Core & Abs</h5>
+            <p style="color:#7a3048;">Targeted core strengthening class to build a strong, stable midsection.</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Duration:</strong> 30 mins</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Level:</strong> All Levels</p>
+            <p style="color:#3b0a1a;font-size:0.85rem;"><strong>Schedule:</strong> Mon, Wed, Fri — 7:00 PM</p>
+            <span class="badge" style="background:#3b0a1a;color:#f2c4ce;">Strength</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pink py-5 text-center">
+    <div class="container">
+      <h2>READY TO <em>start?</em></h2>
+      <p style="color:#7a3048;">Join GasGym today and get your first class free!</p>
+      <a href="membership.html" class="btn-primary-gg mt-3 d-inline-block">View Membership Plans</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="mb-1" style="font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:2px;">🔥 GasGym</p>
+      <p class="mb-0" style="font-size:0.8rem;">© 2026 GasGym, Nairobi. All rights reserved.</p>
+      <div class="mt-2" style="font-size:0.8rem;">
+        <a href="about.html" style="color:#d4a0ac;margin:0 8px;">About</a>
+        <a href="classes.html" style="color:#d4a0ac;margin:0 8px;">Classes</a>
+        <a href="contact.html" style="color:#d4a0ac;margin:0 8px;">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
